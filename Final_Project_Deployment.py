@@ -76,8 +76,7 @@ def prediction(xg,xga,venue_code,sh,sot,poss,dist,attendance,fk,pkatt,opp_code):
 #Membuat Feature
 st.title("Streamlit Premier League Analyzer using ML") 
 opp_code=st.selectbox('Pilih Lawan',['Arsenal','Aston Villa','Brentford','Brighton','Burnley','Chelsea','Crystal Palace','Everton','Fulham','Leeds United','Leicester City','Liverpool','Manchester City','Manchester Utd','Newcastle Utd'
- ,'Norwich City' ,'Sheffield Utd' ,'Southampton' ,'Tottenham' ,'Watford'
- 'West Brom' ,'West Ham', 'Wolves'])
+ ,'Norwich City' ,'Sheffield Utd' ,'Southampton' ,'Tottenham' ,'Watford','West Brom' ,'West Ham', 'Wolves'])
 xg=st.slider('Expected Goal (Evaluasi seberapa besar kemungkinan tembakan akan menghasilkan gol)',0.0,0.5,1.0)
 xga=st.slider('Expected Goal Against (Evaluasi seberapa besar kemungkinan tembakan lawan akan menghasilkan gol)',0.0,0.5,1.0)
 venue_code=st.select_slider('Match Dilakukan pada Stadiun Tim Atau Stadiun Lawan',['Home','Away'])
